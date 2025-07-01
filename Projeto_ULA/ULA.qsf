@@ -1,0 +1,166 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2022  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+# Date created = 12:24:38  June 20, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ULA_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY ULA
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:24:38  JUNE 20, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_location_assignment PIN_Y23 -to A[4]
+set_location_assignment PIN_Y24 -to A[3]
+set_location_assignment PIN_AA22 -to A[2]
+set_location_assignment PIN_AA23 -to A[1]
+set_location_assignment PIN_AA24 -to A[0]
+set_location_assignment PIN_AB27 -to B[4]
+set_location_assignment PIN_AD27 -to B[3]
+set_location_assignment PIN_AC27 -to B[2]
+set_location_assignment PIN_AC28 -to B[1]
+set_location_assignment PIN_AB28 -to B[0]
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AC24 -to S[2]
+set_location_assignment PIN_AB25 -to S[1]
+set_location_assignment PIN_AC25 -to S[0]
+set_location_assignment PIN_G22 -to Comparadores
+set_location_assignment PIN_H21 -to Bitabit[4]
+set_location_assignment PIN_E24 -to Bitabit[3]
+set_location_assignment PIN_E25 -to Bitabit[2]
+set_location_assignment PIN_E22 -to Bitabit[1]
+set_location_assignment PIN_E21 -to Bitabit[0]
+set_global_assignment -name BDF_FILE seg.bdf
+set_global_assignment -name BDF_FILE saidaFinal.bdf
+set_global_assignment -name BDF_FILE EntradaB.bdf
+set_global_assignment -name BDF_FILE EntradaA.bdf
+set_global_assignment -name BDF_FILE DecoderQuatro.bdf
+set_global_assignment -name BDF_FILE Decoder.bdf
+set_global_assignment -name BDF_FILE Dabble.bdf
+set_global_assignment -name BDF_FILE somador5bits.bdf
+set_global_assignment -name BDF_FILE MUXsomador.bdf
+set_global_assignment -name BDF_FILE For5bits.bdf
+set_global_assignment -name BDF_FILE Enabler6bits.bdf
+set_global_assignment -name BDF_FILE Enabler.bdf
+set_global_assignment -name BDF_FILE Complementoa2_6bits.bdf
+set_global_assignment -name BDF_FILE Complemento_a2.bdf
+set_global_assignment -name BDF_FILE somador1bit.bdf
+set_global_assignment -name BDF_FILE Complementadores.bdf
+set_global_assignment -name BDF_FILE ComparadorIgualdade.bdf
+set_global_assignment -name BDF_FILE comparadorAmaiorqueB.bdf
+set_global_assignment -name BDF_FILE blocoBmaiorqueA.bdf
+set_global_assignment -name BDF_FILE blocoAmaiorqueB.bdf
+set_global_assignment -name BDF_FILE somador4bits.bdf
+set_global_assignment -name BDF_FILE Fxor.bdf
+set_global_assignment -name BDF_FILE For.bdf
+set_global_assignment -name BDF_FILE Fand.bdf
+set_global_assignment -name BDF_FILE ULA.bdf
+set_global_assignment -name BDF_FILE decodificadorULA.bdf
+set_global_assignment -name BDF_FILE MUX1bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name BDF_FILE ComparadorAmaiorqueB.bdf
+set_global_assignment -name BDF_FILE ComparadorBmaiorqueA.bdf
+set_global_assignment -name BDF_FILE somadorFinal.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name BDF_FILE subtrator.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_location_assignment PIN_H15 -to CasoANegativo
+set_location_assignment PIN_F18 -to CasoBNegativo
+set_location_assignment PIN_F17 -to CasoFinalNegativo
+set_location_assignment PIN_AD17 -to ADentradaA
+set_location_assignment PIN_AE17 -to BDentradaA
+set_location_assignment PIN_AG17 -to CDentradaA
+set_location_assignment PIN_AH17 -to DDentradaA
+set_location_assignment PIN_AF17 -to EDentradaA
+set_location_assignment PIN_AG18 -to FDentradaA
+set_location_assignment PIN_AA14 -to GDentradaA
+set_location_assignment PIN_AA17 -to AUentradaA
+set_location_assignment PIN_AB16 -to BUentradaA
+set_location_assignment PIN_AA16 -to CUentradaA
+set_location_assignment PIN_AB17 -to DUentradaA
+set_location_assignment PIN_AB15 -to EUentradaA
+set_location_assignment PIN_AA15 -to FUentradaA
+set_location_assignment PIN_AC17 -to GUentradaA
+set_location_assignment PIN_AD18 -to ADentradaB
+set_location_assignment PIN_AC18 -to BDentradaB
+set_location_assignment PIN_AB18 -to CDentradaB
+set_location_assignment PIN_AH19 -to DDentradaB
+set_location_assignment PIN_AG19 -to EDentradaB
+set_location_assignment PIN_AF18 -to FDentradaB
+set_location_assignment PIN_AH18 -to GDentradaB
+set_location_assignment PIN_AB19 -to AUentradaB
+set_location_assignment PIN_AA19 -to BUentradaB
+set_location_assignment PIN_AG21 -to CUentradaB
+set_location_assignment PIN_AH21 -to DUentradaB
+set_location_assignment PIN_AE19 -to EUentradaB
+set_location_assignment PIN_AF19 -to FUentradaB
+set_location_assignment PIN_AE18 -to GUentradaB
+set_location_assignment PIN_V21 -to AD
+set_location_assignment PIN_U21 -to BD
+set_location_assignment PIN_AB20 -to CD
+set_location_assignment PIN_AA21 -to DD
+set_location_assignment PIN_AD24 -to ED
+set_location_assignment PIN_AF23 -to FD
+set_location_assignment PIN_Y19 -to GD
+set_location_assignment PIN_AA25 -to AU
+set_location_assignment PIN_AA26 -to BU
+set_location_assignment PIN_Y25 -to CU
+set_location_assignment PIN_W26 -to DU
+set_location_assignment PIN_Y26 -to EU
+set_location_assignment PIN_W27 -to FU
+set_location_assignment PIN_W28 -to GU
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_H16 -to Somador[5]
+set_location_assignment PIN_J15 -to Somador[4]
+set_location_assignment PIN_G17 -to Somador[3]
+set_location_assignment PIN_J17 -to Somador[2]
+set_location_assignment PIN_H19 -to Somador[1]
+set_location_assignment PIN_J19 -to Somador[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

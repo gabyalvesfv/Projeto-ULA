@@ -1,0 +1,92 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 192 208)
+	(text "decodificadorULA" (rect 5 0 111 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "S[2..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "S[2..0]" (rect 21 27 59 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "Soma" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "Soma" (rect 121 27 155 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 32)(pt 160 32))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "Subtracao" (rect 0 0 60 19)(font "Intel Clear" (font_size 8)))
+		(text "Subtracao" (rect 95 43 155 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 48)(pt 160 48))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "Complemento" (rect 0 0 83 19)(font "Intel Clear" (font_size 8)))
+		(text "Complemento" (rect 72 59 155 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 64)(pt 160 64))
+	)
+	(port
+		(pt 176 80)
+		(output)
+		(text "igual" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "igual" (rect 127 75 155 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 80)(pt 160 80))
+	)
+	(port
+		(pt 176 96)
+		(output)
+		(text "maior" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "maior" (rect 121 91 155 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 96)(pt 160 96))
+	)
+	(port
+		(pt 176 112)
+		(output)
+		(text "menor" (rect 0 0 37 19)(font "Intel Clear" (font_size 8)))
+		(text "menor" (rect 118 107 155 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 112)(pt 160 112))
+	)
+	(port
+		(pt 176 128)
+		(output)
+		(text "and" (rect 0 0 22 19)(font "Intel Clear" (font_size 8)))
+		(text "and" (rect 133 123 155 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 128)(pt 160 128))
+	)
+	(port
+		(pt 176 144)
+		(output)
+		(text "xor" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
+		(text "xor" (rect 138 139 155 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 144)(pt 160 144))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 176))
+	)
+)
